@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+    <nav class="navbar encabezado sticky-top navbar-expand-lg shadow">
+        <div class="container-fluid">
+            <!-- Titulo del navbar -->
+            <a class="navbar-brand mb-0 h1 titulo-navbar" href="../views/inicio.html">Librería mundo de libros</a>
+            <!-- Final titulo del navbar -->
+
+            <!-- Boton del menu -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Final boton del menu -->
+
+            <!-- Menu offcanvas -->
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+
+                <!-- Encabezado del offcanvas -->
+                <div class="offcanvas-header shadow">
+                    <!-- Titulo del menu -->
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <!-- Final titulo del menu -->
+
+                    <!-- Boton salir del menu -->
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <!-- Final boton salir del menu -->
+                </div>
+                <!-- Final encabezado del offcanvas -->
+
+                <!-- Cuerpo del offcanvas -->
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+                        <!-- inicio -->
+                        <li class="nav-item centrar">
+                            <a class="nav-link " aria-current="page" href="../views/inicio.html"><i
+                                    class="bi bi-house-fill"></i> Inicio</a>
+                        </li>
+
+                        <!-- Sobre nosotros -->
+                        <li class="nav-item centrar">
+                            <a class="nav-link active" aria-current="page" href="../views/nosotros.html"><i
+                                    class="bi bi-people-fill"></i> Sobre nosostros</a>
+                        </li>
+
+                        <!-- Catalogo -->
+                        <li class="nav-item centrar">
+                            <a class="nav-link " aria-current="page" href="../views/catalogo.html"><i
+                                    class="bi bi-book-fill"></i> Catalogo</a>
+                        </li>
+
+                        <!-- Contacto -->
+                        <li class="nav-item centrar">
+                            <a class="nav-link" aria-current="page" href="contacto.html"><i
+                                    class="bi bi-person-lines-fill"></i> Contacto</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page"><button onclick="cerrarSesion()"
+                                    class="btn btn-warning"><i class="bi bi-box-arrow-right"></i> Cerrar
+                                    sesión</button></a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Final cuerpo del offcanvas -->
+            </div>
+            <!-- Final menu offcanvas -->
+        </div>
+    </nav>
+
+    <div class="contenedor">
+
+        <div class="row row-cols-1 g-4">
+            <div class="col">
+                <h2>Quiénes somos</h2>
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text">Somos una librería apasionada por las historias que inspiran, educan y
+                            transforman. Desde nuestros inicios, hemos trabajado para ofrecer una selección de obras
+                            cuidadosamente elegidas, desde clásicos de la literatura hasta novedades de autores
+                            emergentes. Nuestro equipo está comprometido en fomentar la lectura y crear un espacio donde
+                            cada lector pueda encontrar su próximo gran libro.
+
+                            Creemos en el poder de los libros para expandir horizontes y en la importancia de hacer
+                            accesibles historias de todas partes del mundo. Con cada libro que ofrecemos, buscamos
+                            contribuir al crecimiento cultural y a la difusión de nuevas ideas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 g-4">
+            <div class="col">
+                <h2>Misión</h2>
+                <div class="card position-relative">
+                    <div class="card-body">
+                        <p class="card-text">Nuestra misión es inspirar y enriquecer a la comunidad de lectores
+                            proporcionando una amplia selección de libros de alta calidad y fomentando un espacio
+                            inclusivo donde todos puedan descubrir y disfrutar el placer de la lectura. Nos esforzamos
+                            por ofrecer un servicio excepcional, facilitando el acceso a conocimientos y
+                            entretenimientos literarios para todas las edades.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <h2>Visión</h2>
+                <div class="card position-relative">
+                    <div class="card-body">
+                        <p class="card-text">Ser un referente en el mundo de la literatura, reconocido no solo por la
+                            calidad y diversidad de nuestro catálogo, sino también por nuestro compromiso con la cultura
+                            y la educación. Aspiramos a convertirnos en el punto de encuentro para lectores apasionados
+                            y a contribuir al crecimiento intelectual y emocional de nuestra comunidad a través de los
+                            libros.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <h2>Carrusel de testimonios</h2>
+
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="19000">
+            <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 g-4 text-center">
+                        <div class="col">
+                            <div class="card card-testimonio ">
+                                <div class="card-header-warning">
+                                    <img src="../img/testimonios/testimonio1.jpg" 
+                                        class="card-img-top foto-testimonio rounded-circle mx-auto"
+                                        alt="Imagen de Juan Pérez" style="width: 100px; height: 100px; margin-top: 10px;">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Juan Pérez</h5>
+                                    <p class="card-text">"Excelente servicio, muy recomendado. Encontré el libro que
+                                        buscaba fácilmente."</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card card-testimonio">
+                                <div class="card-header-warning">
+                                    <img src="../img/testimonios/testimonio2.webp" 
+                                        class="card-img-top foto-testimonio rounded-circle mx-auto"
+                                        alt="Imagen de Juan Pérez" style="width: 100px; height: 100px; margin-top: 10px;">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">María González</h5>
+                                    <p class="card-text">"Un lugar donde la pasión por la literatura se siente en cada
+                                        rincón."</p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card card-testimonio">
+                                <div class="card-header-warning">
+                                    <img src="../img/testimonios/testimonio3.webp" 
+                                        class="card-img-top foto-testimonio rounded-circle mx-auto"
+                                        alt="Imagen de Juan Pérez" style="width: 100px; height: 100px; margin-top: 10px;">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Carlos Rodríguez</h5>
+                                    <p class="card-text">"Gracias a su recomendación, descubrí mi nuevo libro favorito."
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 g-4 text-center">
+                        <div class="col">
+                            <div class="card card-testimonio">
+                                <div class="card-header-warning">
+                                    <img src="../img/testimonios/testimonio4.webp" 
+                                        class="card-img-top foto-testimonio rounded-circle mx-auto"
+                                        alt="Imagen de Juan Pérez" style="width: 100px; height: 100px; margin-top: 10px;">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Laura Martínez</h5>
+                                    <p class="card-text">"El catálogo es muy extenso y los precios accesibles."</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card card-testimonio">
+                                <div class="card-header-warning">
+                                    <img src="../img/testimonios/testimonio5.webp" 
+                                        class="card-img-top foto-testimonio rounded-circle mx-auto"
+                                        alt="Imagen de Juan Pérez" style="width: 100px; height: 100px; margin-top: 10px;">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Jorge Ramírez</h5>
+                                    <p class="card-text">"Me encantó la atención, realmente te ayudan a elegir lo
+                                        mejor."</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card card-testimonio">
+                                <div class="card-header-warning">
+                                    <img src="../img/testimonios/testimonio6.webp" 
+                                        class="card-img-top foto-testimonio rounded-circle mx-auto"
+                                        alt="Imagen de Juan Pérez" style="width: 100px; height: 100px; margin-top: 10px;">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Daniela Fernández</h5>
+                                    <p class="card-text">"Un ambiente perfecto para los amantes de los libros."</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controles de navegación -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <div class="text-center p-3">
+            © 2024 Copyright: Mario García
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="../js/sesion.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

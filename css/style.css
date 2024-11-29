@@ -1,0 +1,183 @@
+.encabezado {
+    display: flex;
+    height: 70px;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #333;
+}
+
+.navbar-nav .nav-link {
+    transition: color 0.3s ease;
+}
+
+.nav-link.active {
+    border-bottom: 3px solid #ffc107;
+}
+
+.nav-link.active i {
+    color: #ffc107;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffc107;
+}
+
+a .nav-link{
+    color: #007bff;
+}
+
+
+.centrar{ 
+    display: flex;
+    align-items: center;
+}
+
+.contenedor{
+    background: #f4f5f8;
+    padding: 15px;
+    min-height: 79.6vh;
+}
+
+section{
+    margin-bottom: 10px;
+}
+
+#inicio {
+    position: relative;
+    color: white;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url('../img/imagenInicio.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.fondo-texto {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+#inicio h1, #inicio p {
+    margin: 0;
+}
+
+.catalogo {
+    
+    width: 100%;
+    min-height: 100%;
+    transition: border 0.3s ease, transform 0.3s ease;
+}
+
+.catalogo img {
+    height: 220px;
+    object-fit: cover;
+}
+
+.catalogo:hover {
+    border: 2px solid #ffc107;
+    transform: scale(1.05);
+}
+
+.catalogo:hover .card-title {
+    color: #ffc107;
+}
+
+.catalogo:hover .card-subtitle {
+    color: #ffc107;
+}
+
+.icono-oferta {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    color: #ffc107; 
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 5px;
+    border-radius: 50%; 
+}
+
+footer{
+    background-color: #ffc107;
+    color: #000;
+    position: absolute;
+    width: 100%;
+}
+
+.contacto{
+    min-height: 100%;
+}
+
+#testimonialCarousel {
+    background-color: #f5f5f5; /* Cambia el color según prefieras */
+    /*padding: 20px;  Opcional: agrega espacio alrededor */
+    border-radius: 1px; /* Opcional: redondea los bordes */
+}
+
+.carousel-item {
+    background-color: #ffffff; /* Fondo de cada slide */
+    padding: 20px; /* Espacio interno dentro de cada slide */
+    border-radius: 8px ; /* Redondea los bordes de cada slide */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: #007bff; /* Cambia el color de fondo */
+    border-radius: 50%; /* Redondea los botones */
+    color: white; /* Cambia el color del ícono dentro del botón */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1); /* Invertir los íconos para que se vean bien con el nuevo fondo */
+}
+
+.card-testimonio{
+    min-height: 100%;
+    width: 100%;
+}
+
+.card-header-warning {
+    background-color: #ffc107; /* Color warning */
+    padding-bottom: 10px;
+    text-align: center;
+    border-top-left-radius: 5px; /* Ajusta el tamaño del borde redondeado */
+    border-top-right-radius: 5px;
+}
+.foto-testimonio {
+    position: relative;
+    margin-top: -15px; /* Ajusta según sea necesario para centrar la imagen */
+}
+
+.total-text {
+    font-size: 1.2rem; /* Aumenta el tamaño del total */
+}
+
+.modal-footer {
+    padding: 1rem; /* Agrega un poco de relleno */
+}
+
+@media (max-width: 768px) {
+    .modal-footer {
+        display: block;
+        text-align: left; /* Alinea los elementos a la izquierda en móviles */
+    }
+    
+    .modal-footer .btn {
+        margin-top: 10px; /* Da espacio entre los botones en móviles */
+    }
+
+    .modal-footer .total-text {
+        margin-bottom: 10px; /* Da un poco de espacio al total */
+    }
+}
